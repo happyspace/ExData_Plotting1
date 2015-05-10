@@ -28,7 +28,7 @@ plot4 <- function(){
     
     with(pcdates, {
         plot(pcdates$dt, pcdates$Global_active_power, type = 'l', ylab = "Global Active Power (kilowatts)", xlab = "Date Time")
-        plot(pcdates$dt, pcdates$Voltage, type = 'l', ylab = "Global Active Power (kilowatts)", xlab = "Date Time")
+        plot(pcdates$dt, pcdates$Voltage, type = 'l', ylab = "Voltage", xlab = "Date Time")
         
         plot(pcdates$dt, pcdates$Sub_metering_1, type = 'l', ylab = "Energy sub metering", xlab = "Date Time")
         with(pcdates, lines(dt, Sub_metering_2, col=2))
