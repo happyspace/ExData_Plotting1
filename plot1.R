@@ -22,7 +22,7 @@ plot1 <- function(){
     pcdates <- subset(pc, pc$Date %in% dates)
     
     png(filename = "plot1.png")
-    hist(pcdates$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts")
+    hist(pcdates$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
     dev.off()
     
     

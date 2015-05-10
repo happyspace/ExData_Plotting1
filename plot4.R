@@ -22,9 +22,9 @@ plot4 <- function(){
     # create date - time
     pcdates$dt <- as.POSIXct(paste(pcdates$Date, pcdates$Time), format = "%Y-%m-%d %H:%M:%S", tz="GMT")
     
-    par(mfrow = c(2,2))
-    
     png(filename = "plot4.png")
+    
+    par(mfrow = c(2,2))
     
     with(pcdates, {
         plot(pcdates$dt, pcdates$Global_active_power, type = 'l', ylab = "Global Active Power (kilowatts)", xlab = "Date Time")
